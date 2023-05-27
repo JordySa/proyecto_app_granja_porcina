@@ -10,13 +10,11 @@ class engorde extends StatefulWidget {
 class _engordeState extends State<engorde> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      home: Scaffold(
+    return 
+    Scaffold(
         appBar: AppBar(
-          title: Text('Engorde'),
+          title: 
+          Text('Engorde'),
         ),
         body: Padding(
           padding: EdgeInsets.all(16.0),
@@ -92,7 +90,6 @@ class _engordeState extends State<engorde> {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }
