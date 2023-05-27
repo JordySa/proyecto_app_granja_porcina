@@ -17,13 +17,21 @@ class _HomeControllerState extends State<HomeController> {
             Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           Image.network(
               'https://th.bing.com/th/id/OIP.qYe3NmdDVTUg2jF3OsMMKgHaEr?pid=ImgDet&rs=1'),
-          TextButton(onPressed: () {}, child: Text("Maternidad")),
-          TextButton(onPressed: () {}, child: Text("Engorde")),
+          TextButton(
+              onPressed: () {},
+              child: Text("Maternidad"),
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.amber))),
+          TextButton(
+              onPressed: () {},
+              child: Text("Engorde"),
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.amber))),
           TextButton(
             onPressed: () {},
             child: Text("Alimentacion"),
             style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.amberAccent)),
+                backgroundColor: MaterialStateProperty.all(Colors.amber)),
           ),
         ]),
       ),
