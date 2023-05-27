@@ -16,12 +16,12 @@ class _alimentacionState extends State<alimentacion> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-Container(
-  width: 200, // Establece el ancho deseado
-  height: 200, // Establece la altura deseada
-  child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtDaeU6jENPR6Vz4sXfAaqmmfHBsYKxV8qmA&usqp=CAU'),
-),              
-Text(
+            Container(
+              width: 200, // Establece el ancho deseado
+              height: 200, // Establece la altura deseada
+              child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtDaeU6jENPR6Vz4sXfAaqmmfHBsYKxV8qmA&usqp=CAU'),
+            ),              
+            Text(
                 'Formulario de Alimentos Porcinos',
                 style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
               ),

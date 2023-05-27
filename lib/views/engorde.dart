@@ -21,7 +21,11 @@ class _engordeState extends State<engorde> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCaD3-_DzXiIUA8l3iLJZaxtIlzdx8nO7Pg&usqp=CAU'),
+            Container(
+              width: 200, // Establece el ancho deseado
+              height: 200, // Establece la altura deseada
+              child:               Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCaD3-_DzXiIUA8l3iLJZaxtIlzdx8nO7Pg&usqp=CAU')
+            ),  
                Row(
                 children: [
                   Expanded(
