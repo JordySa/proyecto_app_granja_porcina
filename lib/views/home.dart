@@ -26,7 +26,7 @@ class _HomeControllerState extends State<HomeController> {
                 goToMaternidad(context);
               },
               child: Text(
-                "Maternidad",
+                "MATERNIDAD",
                 style: myButtonTextStyle,
               ),
               style: ButtonStyle(
@@ -36,7 +36,7 @@ class _HomeControllerState extends State<HomeController> {
                 goToEngorde(context);
               },
               child: Text(
-                "Engorde",
+                "ENGORDE",
                 style: myButtonTextStyle,
               ),
               style: ButtonStyle(
@@ -46,7 +46,18 @@ class _HomeControllerState extends State<HomeController> {
               goToAlimentacion(context);
             },
             child: Text(
-              "Alimentacion",
+              "ALIMENTACION",
+              style: myButtonTextStyle,
+            ),
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.amber)),
+          ),
+          TextButton(
+            onPressed: () {
+              goToRazas(context);
+            },
+            child: Text(
+              "RAZAS PORCINAS",
               style: myButtonTextStyle,
             ),
             style: ButtonStyle(
@@ -66,6 +77,10 @@ class _HomeControllerState extends State<HomeController> {
   }
 
   void goToEngorde(BuildContext) {
+    Navigator.of(context).pushNamed("/");
+  }
+
+  void goToRazas(BuildContext) {
     Navigator.of(context).pushNamed("/");
   }
 }
