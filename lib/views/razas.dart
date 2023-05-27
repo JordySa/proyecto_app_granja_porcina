@@ -8,19 +8,20 @@ class RazaController extends StatefulWidget {
 }
 
 class _RazaControllerState extends State<RazaController> {
-  final List<String> razasPorcinas = [
-    'Yorkshire',
-    'Landrace',
-    'Duroc',
-    'Hampshire',
-    'Berkshire',
-    'Pietrain',
-    'Large Black',
-    'Tamworth',
-    'Poland China',
-    'Chester White',
-    'Meishan',
-    'Mangalica',
+  final List<RazaPorcina> razasPorcinas = [
+    RazaPorcina(
+      nombre: 'Yorkshire',
+      caracteristicas: 'Buen rendimiento en carne magra y buen crecimiento.',
+    ),
+    RazaPorcina(
+      nombre: 'Landrace',
+      caracteristicas: 'Gran prolificidad y calidad de carne.',
+    ),
+    RazaPorcina(
+      nombre: 'Duroc',
+      caracteristicas: 'Buena capacidad de crecimiento y carne con buen sabor.',
+    ),
+    // Agrega más razas porcinas aquí
   ];
   @override
   Widget build(BuildContext context) {
@@ -33,10 +34,21 @@ class _RazaControllerState extends State<RazaController> {
         itemBuilder: (context, index) {
           final raza = razasPorcinas[index];
           return ListTile(
-            title: Text(raza),
+            title: Text(raza.nombre),
+            subtitle: Text(raza.caracteristicas),
           );
         },
       ),
     );
   }
+}
+
+class RazaPorcina {
+  final String nombre;
+  final String caracteristicas;
+
+  RazaPorcina({
+    required this.nombre,
+    required this.caracteristicas,
+  });
 }
