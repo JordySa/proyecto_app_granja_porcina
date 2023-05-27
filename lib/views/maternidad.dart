@@ -18,43 +18,39 @@ class _MaternidadControllerState extends State<MaternidadController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Animal Form'),
+        title: Text('Formulario para ingresar gerda gestante'),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            CircleAvatar(
-              radius: 60.0,
-              backgroundImage: AssetImage('assets/images/animal.jpg'),
-            ),
             SizedBox(height: 16.0),
             TextFormField(
               controller: _serialNumberController,
               decoration: InputDecoration(
-                labelText: 'Serial Number',
+                labelText: 'Numero de Arete',
               ),
             ),
             SizedBox(height: 16.0),
             TextFormField(
               controller: _speciesController,
               decoration: InputDecoration(
-                labelText: 'Species',
+                labelText: 'Esoecie de Cerda',
               ),
             ),
             SizedBox(height: 16.0),
             TextFormField(
               controller: _breedingDateController,
               decoration: InputDecoration(
-                labelText: 'Breeding Date',
+                labelText: 'Fecha de Monta',
               ),
             ),
             SizedBox(height: 16.0),
             TextFormField(
               controller: _possibleDeliveryDateController,
               decoration: InputDecoration(
-                labelText: 'Possible Delivery Date',
+                labelText: 'Possible Dia de Nacimientos ',
               ),
             ),
             SizedBox(height: 24.0),
@@ -94,10 +90,10 @@ class _MaternidadControllerState extends State<MaternidadController> {
     String breedingDate = _breedingDateController.text;
     String possibleDeliveryDate = _possibleDeliveryDateController.text;
 
-    print('Serial Number: $serialNumber');
-    print('Species: $species');
-    print('Breeding Date: $breedingDate');
-    print('Possible Delivery Date: $possibleDeliveryDate');
+    print('Numero de Arete: $serialNumber');
+    print('Raza de Cerda: $species');
+    print('Dia de Monta: $breedingDate');
+    print('Possible dia de Nacimientos: $possibleDeliveryDate');
   }
 
   void _cancelForm() {
