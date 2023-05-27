@@ -8,6 +8,10 @@ class HomeController extends StatefulWidget {
 }
 
 class _HomeControllerState extends State<HomeController> {
+  TextStyle myButtonTextStyle = TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,17 +23,26 @@ class _HomeControllerState extends State<HomeController> {
               'https://th.bing.com/th/id/OIP.qYe3NmdDVTUg2jF3OsMMKgHaEr?pid=ImgDet&rs=1'),
           TextButton(
               onPressed: () {},
-              child: Text("Maternidad"),
+              child: Text(
+                "Maternidad",
+                style: myButtonTextStyle,
+              ),
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.amber))),
           TextButton(
               onPressed: () {},
-              child: Text("Engorde"),
+              child: Text(
+                "Engorde",
+                style: myButtonTextStyle,
+              ),
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.amber))),
           TextButton(
             onPressed: () {},
-            child: Text("Alimentacion"),
+            child: Text(
+              "Alimentacion",
+              style: myButtonTextStyle,
+            ),
             style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(Colors.amber)),
           ),
