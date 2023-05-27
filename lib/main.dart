@@ -16,12 +16,8 @@ class MyApp extends StatelessWidget {
       "/": (context) => HomeController(),
       "/maternidad": (context) => MaternidadController(),
       "/razas": (context) => RazaController(),
-<<<<<<< Updated upstream
       "/alimentacion": (context) => alimentacion(),
       "/engorde": (context) => engorde(),
-
-=======
->>>>>>> Stashed changes
     });
   }
 }
