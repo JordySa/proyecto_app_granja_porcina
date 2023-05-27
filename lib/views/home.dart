@@ -81,6 +81,6 @@ class _HomeControllerState extends State<HomeController> {
   }
 
   void goToRazas(BuildContext) {
-    Navigator.of(context).pushNamed("/");
+    Navigator.of(context).pushNamed("/razas");
   }
 }

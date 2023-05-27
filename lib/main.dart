@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vacio/views/home.dart';
 import 'package:flutter_vacio/views/maternidad.dart';
+import 'package:flutter_vacio/views/razas.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(title: 'Material App', routes: {
       "/": (context) => HomeController(),
       "/maternidad": (context) => MaternidadController(),
+      "/razas": (context) => RazaController()
     });
   }
 }
