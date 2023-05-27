@@ -73,11 +73,11 @@ class _HomeControllerState extends State<HomeController> {
   }
 
   void goToAlimentacion(BuildContext) {
-    Navigator.of(context).pushNamed("/");
+    Navigator.of(context).pushNamed("/alimentacion");
   }
 
   void goToEngorde(BuildContext) {
-    Navigator.of(context).pushNamed("/");
+    Navigator.of(context).pushNamed("/engorde");
   }
 
   void goToRazas(BuildContext) {
