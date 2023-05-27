@@ -22,7 +22,9 @@ class _HomeControllerState extends State<HomeController> {
           Image.network(
               'https://th.bing.com/th/id/OIP.qYe3NmdDVTUg2jF3OsMMKgHaEr?pid=ImgDet&rs=1'),
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                goToMaternidad(context);
+              },
               child: Text(
                 "Maternidad",
                 style: myButtonTextStyle,
@@ -30,7 +32,9 @@ class _HomeControllerState extends State<HomeController> {
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.amber))),
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                goToEngorde(context);
+              },
               child: Text(
                 "Engorde",
                 style: myButtonTextStyle,
@@ -38,7 +42,9 @@ class _HomeControllerState extends State<HomeController> {
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.amber))),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              goToAlimentacion(context);
+            },
             child: Text(
               "Alimentacion",
               style: myButtonTextStyle,
@@ -49,5 +55,17 @@ class _HomeControllerState extends State<HomeController> {
         ]),
       ),
     );
+  }
+
+  void goToMaternidad(BuildContext) {
+    Navigator.of(context).pushNamed("/");
+  }
+
+  void goToAlimentacion(BuildContext) {
+    Navigator.of(context).pushNamed("/");
+  }
+
+  void goToEngorde(BuildContext) {
+    Navigator.of(context).pushNamed("/");
   }
 }
