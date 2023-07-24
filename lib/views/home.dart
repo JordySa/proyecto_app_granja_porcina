@@ -57,7 +57,7 @@ class _HomeControllerState extends State<HomeController> {
               goToRazas(context);
             },
             child: Text(
-              "RAZAS PORCINAS",
+              "REPRODUCCION",
               style: myButtonTextStyle,
             ),
             style: ButtonStyle(

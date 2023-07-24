@@ -8,7 +8,6 @@ class LoginController extends StatefulWidget {
 }
 
 class _LoginControllerState extends State<LoginController> {
-  @override
   TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
 
@@ -19,12 +18,12 @@ class _LoginControllerState extends State<LoginController> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            
             Container(
               width: 200, // Establece el ancho deseado
               height: 200, // Establece la altura deseada
-              child: Image.network('https://img.freepik.com/vector-premium/cute-dibujos-animados-cerdito-sentado_188253-1304.jpg?w=2000'),
-            ),  
+              child: Image.network(
+                  'https://img.freepik.com/vector-premium/cute-dibujos-animados-cerdito-sentado_188253-1304.jpg?w=2000'),
+            ),
             TextFormField(
               controller: _emailController,
               decoration: InputDecoration(
