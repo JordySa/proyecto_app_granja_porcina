@@ -8,7 +8,7 @@ class DbConnection {
       join(await getDatabasesPath(), dbName),
       version: 1,
       onCreate: (db, version) async => await db.execute(
-          "CREATE TABLE IF NOT EXISTS usuarios (id INTEGER PRIMARY KEY, email TEXT, password TEXT)"),
+          "CREATE TABLE IF NOT EXISTS reproduccion (id INTEGER PRIMARY KEY, code TEXT, number TEXT, age TEXT, weight TEXT, race TEXT, photo BLOB)"),
     );
   }
 

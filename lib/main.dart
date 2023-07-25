@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:proyecto_app_granja_porcina/views/home.dart';
+import 'package:proyecto_app_granja_porcina/views/reproduccion/list_reproduccion.dart';
 
 import 'package:proyecto_app_granja_porcina/views/seguridad/login.dart';
 
@@ -15,8 +16,10 @@ class MyApp extends StatelessWidget {
         title: 'Material App',
         initialRoute: "/seguridad/login",
         routes: {
-          "/": (context) => HomeController(),
-          "/seguridad/login": (context) => LoginController(),
+          "/": (context) => const HomeController(),
+          "/seguridad/login": (context) => const LoginController(),
+          "/reproduccion/list_reproduccion": (context) =>
+              const ListViewReproduccion(),
         });
   }
 }

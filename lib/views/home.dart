@@ -8,79 +8,77 @@ class HomeController extends StatefulWidget {
 }
 
 class _HomeControllerState extends State<HomeController> {
-  TextStyle myButtonTextStyle = TextStyle(
+  TextStyle myButtonTextStyle = const TextStyle(
     fontSize: 20.0,
     fontWeight: FontWeight.bold,
   );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Bievenido a PorciApp")),
+      appBar: AppBar(title: const Text("Bievenido a PorciApp")),
       body: Center(
         child:
             Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           Image.network(
               'https://th.bing.com/th/id/OIP.qYe3NmdDVTUg2jF3OsMMKgHaEr?pid=ImgDet&rs=1'),
           TextButton(
-              onPressed: () {
-                goToMaternidad(context);
-              },
+              onPressed: () {},
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.amber)),
               child: Text(
                 "MATERNIDAD",
                 style: myButtonTextStyle,
-              ),
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.amber))),
+              )),
           TextButton(
-              onPressed: () {
-                goToEngorde(context);
-              },
+              onPressed: () {},
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.amber)),
               child: Text(
                 "ENGORDE",
                 style: myButtonTextStyle,
-              ),
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.amber))),
+              )),
           TextButton(
-            onPressed: () {
-              goToAlimentacion(context);
-            },
+            onPressed: () {},
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.amber)),
             child: Text(
               "ALIMENTACION",
               style: myButtonTextStyle,
             ),
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.amber)),
           ),
           TextButton(
             onPressed: () {
-              goToRazas(context);
+              goToReproduccion(context);
             },
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.amber)),
             child: Text(
               "REPRODUCCION",
               style: myButtonTextStyle,
             ),
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.amber)),
           ),
         ]),
       ),
     );
   }
 
+  // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
   void goToMaternidad(BuildContext) {
     Navigator.of(context).pushNamed("/maternidad");
   }
 
+  // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
   void goToAlimentacion(BuildContext) {
     Navigator.of(context).pushNamed("/alimentacion");
   }
 
+  // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
   void goToEngorde(BuildContext) {
     Navigator.of(context).pushNamed("/engorde");
   }
 
-  void goToRazas(BuildContext) {
-    Navigator.of(context).pushNamed("/razas");
+  // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
+  void goToReproduccion(BuildContext) {
+    Navigator.of(context).pushNamed("/reproduccion/list_reproduccion");
   }
 }

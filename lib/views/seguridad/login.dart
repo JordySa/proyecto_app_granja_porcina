@@ -8,17 +8,18 @@ class LoginController extends StatefulWidget {
 }
 
 class _LoginControllerState extends State<LoginController> {
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Container(
+            SizedBox(
               width: 200, // Establece el ancho deseado
               height: 200, // Establece la altura deseada
               child: Image.network(
@@ -26,21 +27,21 @@ class _LoginControllerState extends State<LoginController> {
             ),
             TextFormField(
               controller: _emailController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Email',
               ),
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             TextFormField(
               controller: _passwordController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Password',
               ),
               obscureText: true,
             ),
-            SizedBox(height: 24.0),
+            const SizedBox(height: 24.0),
             TextButton(
-              child: Text('Ingresar'),
+              child: const Text('Ingresar'),
               onPressed: () {
                 gotoHome(context);
               },
@@ -51,6 +52,7 @@ class _LoginControllerState extends State<LoginController> {
     );
   }
 
+  // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
   void gotoHome(BuildContext) {
     Navigator.of(context).pushNamed("/");
   }
