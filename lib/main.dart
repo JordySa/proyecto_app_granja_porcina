@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_vacio/views/alimentacion.dart';
-import 'package:flutter_vacio/views/engorde.dart';
-import 'package:flutter_vacio/views/home.dart';
-import 'package:flutter_vacio/views/maternidad.dart';
-import 'package:flutter_vacio/views/razas.dart';
-import 'package:flutter_vacio/views/seguridad/login.dart';
+import 'package:proyecto_app_granja_porcina/views/alimentacion.dart';
+import 'package:proyecto_app_granja_porcina/views/engorde.dart';
+import 'package:proyecto_app_granja_porcina/views/home.dart';
+import 'package:proyecto_app_granja_porcina/views/maternidad.dart';
+import 'package:proyecto_app_granja_porcina/views/razas.dart';
+import 'package:proyecto_app_granja_porcina/views/seguridad/login.dart';
 
 void main() => runApp(const MyApp());
 
