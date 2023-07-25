@@ -1,5 +1,5 @@
-import 'package:proyecto_app_granja_porcina/connection/db_conecction.dart';
-import 'package:proyecto_app_granja_porcina/entities/reproduccion.dart';
+import 'package:hoy/connection/db_conecction.dart';
+import 'package:hoy/entities/reproduccion.dart';
 
 class ReproduccionController {
   static Future<int> insert(Reproduccion data) async {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_app_granja_porcina/controller/maternidad_controller.dart';
-import 'package:proyecto_app_granja_porcina/entities/maternidad.dart';
+import 'package:hoy/controller/maternidad_controller.dart';
+import 'package:hoy/entities/maternidad.dart';
 class formularioMaternidad extends StatefulWidget {
   const formularioMaternidad({super.key});
 

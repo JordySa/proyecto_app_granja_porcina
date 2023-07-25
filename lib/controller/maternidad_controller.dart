@@ -1,6 +1,6 @@
 
-import 'package:proyecto_app_granja_porcina/connection/db_connection_maternidad.dart';
-import 'package:proyecto_app_granja_porcina/entities/maternidad.dart';
+import 'package:hoy/connection/db_connection_maternidad.dart';
+import 'package:hoy/entities/maternidad.dart';
 
 class MaternidadController{
   static Future <int> insert (Maternidad data) async

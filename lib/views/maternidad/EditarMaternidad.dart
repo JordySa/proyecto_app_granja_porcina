@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:proyecto_app_granja_porcina/controller/maternidad_controller.dart';
-import 'package:proyecto_app_granja_porcina/entities/maternidad.dart';
+import 'package:hoy/controller/maternidad_controller.dart';
+import 'package:hoy/entities/maternidad.dart';
 
 class editarMaternidad extends StatefulWidget {
   const editarMaternidad({super.key});

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:proyecto_app_granja_porcina/views/home.dart';
-import 'package:proyecto_app_granja_porcina/views/maternidad/EditarMaternidad.dart';
-import 'package:proyecto_app_granja_porcina/views/maternidad/Formulario.dart';
-import 'package:proyecto_app_granja_porcina/views/maternidad/ListaMaternidad.dart';
-import 'package:proyecto_app_granja_porcina/views/reproduccion/list_reproduccion.dart';
+import 'package:hoy/views/home.dart';
+import 'package:hoy/views/maternidad/EditarMaternidad.dart';
+import 'package:hoy/views/maternidad/Formulario.dart';
+import 'package:hoy/views/maternidad/ListaMaternidad.dart';
+import 'package:hoy/views/reproduccion/list_reproduccion.dart';
 
-import 'package:proyecto_app_granja_porcina/views/seguridad/login.dart';
+import 'package:hoy/views/seguridad/login.dart';
 
 void main() => runApp(const MyApp());
 
