@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:proyecto_app_granja_porcina/views/home.dart';
+import 'package:proyecto_app_granja_porcina/views/maternidad/EditarMaternidad.dart';
+import 'package:proyecto_app_granja_porcina/views/maternidad/Formulario.dart';
+import 'package:proyecto_app_granja_porcina/views/maternidad/ListaMaternidad.dart';
 import 'package:proyecto_app_granja_porcina/views/reproduccion/list_reproduccion.dart';
 
 import 'package:proyecto_app_granja_porcina/views/seguridad/login.dart';
@@ -18,8 +21,12 @@ class MyApp extends StatelessWidget {
         routes: {
           "/": (context) => const HomeController(),
           "/seguridad/login": (context) => const LoginController(),
-          "/reproduccion/list_reproduccion": (context) =>
-              const ListViewReproduccion(),
+          "/reproduccion/list_reproduccion": (context) =>const ListViewReproduccion(),
+
+          
+          "/maternidad/listaMaternidad": (context) => ListaMaternidad(),
+          "/editarMaternidad": (context) => editarMaternidad(),
+          "/formularioMaternidad": (context) => formularioMaternidad(),
         });
   }
 }

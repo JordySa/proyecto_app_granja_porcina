@@ -22,7 +22,7 @@ class _HomeControllerState extends State<HomeController> {
           Image.network(
               'https://th.bing.com/th/id/OIP.qYe3NmdDVTUg2jF3OsMMKgHaEr?pid=ImgDet&rs=1'),
           TextButton(
-              onPressed: () {},
+              onPressed: () {goToMaternidad (context);},
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.amber)),
               child: Text(
@@ -64,7 +64,7 @@ class _HomeControllerState extends State<HomeController> {
 
   // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
   void goToMaternidad(BuildContext) {
-    Navigator.of(context).pushNamed("/maternidad");
+    Navigator.of(context).pushNamed("/maternidad/listaMaternidad");
   }
 
   // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
