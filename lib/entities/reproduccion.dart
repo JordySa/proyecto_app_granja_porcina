@@ -1,5 +1,3 @@
-import 'dart:typed_data';
-
 class Reproduccion {
   int? id;
   String code;
@@ -7,7 +5,7 @@ class Reproduccion {
   String age;
   String weight;
   String race;
-  final Uint8List photo;
+  String photo;
   Reproduccion({
     this.id,
     required this.code,

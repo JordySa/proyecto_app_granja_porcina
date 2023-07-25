@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:proyecto_app_granja_porcina/views/home.dart';
 import 'package:proyecto_app_granja_porcina/views/reproduccion/list_reproduccion.dart';
+import 'package:proyecto_app_granja_porcina/views/reproduccion/new_reproduccion.dart';
 
 import 'package:proyecto_app_granja_porcina/views/seguridad/login.dart';
 
@@ -20,6 +21,8 @@ class MyApp extends StatelessWidget {
           "/seguridad/login": (context) => const LoginController(),
           "/reproduccion/list_reproduccion": (context) =>
               const ListViewReproduccion(),
+          "/reproduccion/new_reproduccion": (context) =>
+              const NewVistReproduccion(),
         });
   }
 }

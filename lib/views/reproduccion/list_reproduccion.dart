@@ -22,7 +22,7 @@ class _ListViewReproduccionState extends State<ListViewReproduccion> {
             subtitle: const Text("Agregar una nueva reproduccion"),
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {
-              Navigator.pushNamed(context, "/reproduccion/add");
+              Navigator.pushNamed(context, "/reproduccion/new_reproduccion");
             },
           ),
           ListTile(
