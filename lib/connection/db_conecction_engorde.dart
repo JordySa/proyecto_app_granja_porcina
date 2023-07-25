@@ -38,4 +38,6 @@ class DbConnection {
     final db = await DbConnection.getDb();
     return await db.query(table, where: "id = ?", whereArgs: [id]);
   }
+
+  static getAll(String s) {}
 }

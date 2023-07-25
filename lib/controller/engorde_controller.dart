@@ -3,21 +3,21 @@ import 'package:hoy/entities/engorde.dart';
 
 class EngordeController {
   static Future<int> insert(Engorde data) async {
-    return await DbConnectionEngorde.insert("Engorde", data.toMap());
+    return await DbConnectionMaternidad.insert("Engorde", data.toMap());
   }
 
   static Future<int> update(Engorde data) async {
-    return await DbConnectionEngorde.update(
+    return await DbConnectionMaternidad.update(
         "Engorde", data.toMap(), data.id as int);
   }
 
   static Future<int> delete(Engorde data) async {
-    return await DbConnectionEngorde.delete("Engorde", data.id as int);
+    return await DbConnectionMaternidad.delete("Engorde", data.id as int);
   }
 
   static Future<List<Engorde>> select() async {
     List<Map<String, dynamic>> result =
-        await DbConnectionEngorde.getAll("Engorde");
+        await DbConnectionMaternidad.getAll("Engorde");
     if (result.isEmpty) {
       return List.empty();
     }
@@ -27,7 +27,7 @@ class EngordeController {
 
   static Future<List<Engorde>> detail(Engorde data) async {
     List<Map<String, dynamic>> result =
-        await DbConnectionEngorde.select("Engorde", "id =?", [data.id]);
+        await DbConnectionMaternidad.select("Engorde", "id = ?", [data.id]);
     if (result.isEmpty) {
       return List.empty();
     }
